@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<% console.log(products) %>
+
+<% for (const thisProduct of products) {%>
+    
+    <ul>
+        <%= thisProduct.id %>
+        <%= thisProduct.name %>
+        <%= thisProduct.brand %>
+
+    </ul>
+
+    <%}%>
+
+<%- include('partials/footer') %>
